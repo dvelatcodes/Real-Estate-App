@@ -2,7 +2,7 @@
 import Router from "next/router";
 import Head from "next/head";
 import nProgress from "nprogress";
-import Layout from "../component/Layout";
+import Layout from "../components/Layout";
 import { ChakraProvider } from "@chakra-ui/react";
 
 export default function App({ Component, pageProps }) {
