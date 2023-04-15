@@ -47,12 +47,12 @@ const Property = ({
               {isVerified && <GoVerified />}
             </Box>
             <Text fontWeight="bold" fontSize="lg">
-              AED {price}
+              AED {millify(price)}
               {rentFrequency && `/${rentFrequency}`}
             </Text>
           </Flex>
           <Box>
-            <Avatar size="sm" src={agency?.logo?.url}></Avatar>
+            <Avatar size="sm" src={agency?.logo?.url} />
           </Box>
         </Flex>
         <Flex
