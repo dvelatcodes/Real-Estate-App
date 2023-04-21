@@ -56,7 +56,7 @@ export default function SearchFilters() {
   }, [searchTerm]);
 
   return (
-    <Flex bg="gray.100" p="4" justifyContent="center" flexWrap="wrap">
+    <Flex bg="gray.100" padding="4" justifyContent="center" flexWrap="wrap">
       {filters?.map((filter) => (
         <Box key={filter.queryName}>
           <Select
@@ -64,8 +64,8 @@ export default function SearchFilters() {
               searchProperties({ [filter.queryName]: e.target.value })
             }
             placeholder={filter.placeholder}
-            w="fit-content"
-            p="2"
+            width="fit-content"
+            padding="2"
           >
             {filter?.items?.map((item) => (
               <option value={item.value} key={item.value}>
@@ -89,7 +89,7 @@ export default function SearchFilters() {
             <Input
               placeholder="Type Here"
               value={searchTerm}
-              w="300px"
+              width="300px"
               focusBorderColor="gray.300"
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -121,7 +121,7 @@ export default function SearchFilters() {
                     <Text
                       cursor="pointer"
                       bg="gray.200"
-                      p="2"
+                      padding="2"
                       borderBottom="1px"
                       borderColor="gray.100"
                     >
@@ -133,7 +133,7 @@ export default function SearchFilters() {
                   <Flex
                     justifyContent="center"
                     alignItems="center"
-                    flexDir="column"
+                    flexDirection="column"
                     marginTop="5"
                     marginBottom="5"
                   >
